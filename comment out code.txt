@@ -1,0 +1,7 @@
+// <div>
+    //   {/* Button to trigger the POST request */}
+    //   <button onClick={handleButtonClick}>Send POST Request</button>
+
+    //   {/* Display the content of the 'result' key */}
+    //   {renderResultContent()}
+    // </div>

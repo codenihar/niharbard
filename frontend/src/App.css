@@ -1,0 +1,220 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Cascadia Code', monospace;
+  font-weight: bold;
+  background-image: url('https://res.cloudinary.com/nihars3/image/upload/v1684594378/IMG_0339_dabldc.jpg');
+}
+
+.welcome-animation {
+  text-align: center;
+  animation: fadeOut 4s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.nihar-bard-h1 {
+  font-size: 60px;
+}
+
+@media (max-width: 768px) {
+  /* Styles for mobile devices */
+  .nihar-bard-h1 {
+    font-size: 24px;
+  }
+}
+
+/* Styles for PC */
+@media only screen and (min-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url('https://res.cloudinary.com/nihars3/image/upload/v1684594379/IMG_0338_u78sow.jpg');
+    background-size: cover;
+    margin: 0px;
+  }
+
+  .header-h1 {
+    font-family: Lato;
+    text-align: center;
+    margin-right: 10px;
+  }
+
+  .exp-h1 {
+    text-align: center;
+    font-family: Lato;
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 5px 10px 0px 10px;
+    height: 30px;
+    margin-top: 22px;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .chatbox {
+    /* Add your chat interface styles for PC here */
+    overflow-y: auto;
+    max-height: 500px;
+    width: 800px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+    }
+
+  .message-cont {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+  }
+  
+
+  .message-cont-img {
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .message-cont-h1 {
+    font-size: 16px;
+    background-color: #e2f1ca;
+    padding: 20px;
+    border-radius: 0 20px 20px 20px;
+    font-family: Nunito;
+    font-weight: lighter;
+    margin-top: 15px;
+  }
+
+  .question-cont {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+    justify-content: right;
+  }
+  
+
+  .question-cont-img {
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+
+  .question-cont-h1 {
+    font-size: 16px;
+    background-color: #caf1e2;
+    padding: 20px;
+    border-radius: 20px 20px 0px 20px;
+    font-family: Nunito;
+    font-weight: lighter;
+    margin-bottom: 15px;
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .user-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 5px;
+    width: 800px;
+    background-color:#cae9f1;
+  }
+
+  .user-input input {
+    flex-grow: 1;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    background-color: transparent;
+    font-size: 15px;
+  }
+
+  .user-input button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 5px;
+  }
+}
+
+/* Styles for Mobile */
+@media only screen and (max-width: 767px) {
+  .main {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .header-h1 {
+    text-align: center;
+  }
+
+  .exp-h1 {
+    text-align: center;
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+
+  .chatbox {
+    /* Add your chat interface styles for mobile here */
+  }
+
+  .footer {
+    margin-top: 20px;
+  }
+
+  .user-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-input input {
+    width: 100%;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline: none;
+  }
+
+  .user-input button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 5px;
+  }
+}
