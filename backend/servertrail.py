@@ -6,7 +6,7 @@ from pymongo import MongoClient
 app = Flask(__name__)
 CORS(app)
 
-token = 'Wgi8HT6PzwSpHQ9VUDNqgnL669sFPAKgxM4Y-pik0zuXjWJIQ8BGcwPZPKfEsITLZ6BDWw.'
+token = 'Token goes here'
 bard = Bard(token=token)
 
 @app.route('/members', methods=['POST', 'GET'])
